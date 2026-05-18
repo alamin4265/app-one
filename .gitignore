@@ -11,6 +11,20 @@
 npm-debug.log
 yarn-error.log
 
+# Local environment and secrets
+.env
+.env.*
+*.local
+secrets.env
+
+# Local certificates and keys
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
 # IDEs and editors
 .idea/
 .project
