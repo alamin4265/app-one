@@ -1,0 +1,4 @@
+app:
+  env: DEV
+  color: "#3b82f6"
+host: dev.app-one

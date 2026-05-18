@@ -1,0 +1,4 @@
+app:
+  env: TEST
+  color: "#eab308"
+host: test.app-one

@@ -1,0 +1,14 @@
+replicaCount: 1
+app:
+  env: PROD
+  color: "#ef4444"
+host: app-one
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+rollingUpdate:
+  enabled: true

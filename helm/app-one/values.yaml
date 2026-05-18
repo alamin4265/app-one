@@ -1,0 +1,26 @@
+replicaCount: 1
+
+image:
+  name: app-one
+  tag: "2.1.0"
+  pullPolicy: Never
+
+app:
+  env: DEV
+  version: "2.0.0"
+  color: "#3b82f6"
+
+host: dev.app-one
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 200m
+    memory: 256Mi
+
+secretName: app-secrets
+
+rollingUpdate:
+  enabled: false

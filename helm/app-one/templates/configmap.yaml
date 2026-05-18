@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-one-config
+  namespace: {{ .Release.Namespace }}
+data:
+  APP_ENV: {{ .Values.app.env | quote }}
+  APP_VERSION: {{ .Values.app.version | quote }}
+  APP_COLOR: {{ .Values.app.color | quote }}
